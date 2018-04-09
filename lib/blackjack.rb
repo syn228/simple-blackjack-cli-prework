@@ -18,8 +18,8 @@ def get_user_input
   gets
 end
 
-def end_game(number)
-  puts "Sorry, you hit #{number}. Thanks for playing!"
+def end_game(card_total)
+  puts "Sorry, you hit #{card_total}. Thanks for playing!"
 end
 
 def initial_round
@@ -31,12 +31,12 @@ def initial_round
 
 end
 
-def hit?(number)
+def hit?(card_total)
   prompt_user
   if get_user_input == 'h'
-  number += deal_card
+  card_total += deal_card
 end
- return number
+ return card_total
  
 
 end
