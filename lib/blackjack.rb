@@ -26,7 +26,7 @@ def initial_round
     card_one = deal_card
     card_two = deal_card
     card_total = card_one + card_two
-    puts "Your cards add up to #{sum}"
+    display_card_total(puts "Your cards add up to #{sum}"
     return sum
 
 end
