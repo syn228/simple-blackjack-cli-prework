@@ -33,10 +33,10 @@ end
 
 def hit?(number)
   prompt_user
-  get_user_input
- 
+  if get_user_input == 'h'
+  
  return number
- return number + number
+ 
 
 end
 
